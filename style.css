@@ -43,7 +43,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    max-width: 100%;
 }
 
 .menu {
@@ -94,25 +94,9 @@ ul li a {
 }
 
 .content {
-    display: flex;
-    max-width: 90%;
-    align-items: unset;
-    flex-direction: column;
-    padding-top: 103px;
-    position: relative;
+    max-width: 1170px;
+    padding: 155px 0 0 0;
 }
-
-/*#background-right-content {
-  width: 701px;
-  height: 496px;
-  position: absolute;
-  background-image: url(assets/blur-backgroud-right.png);
-  background-repeat: no-repeat;
-  background-position: center right;
-  background-size: contain;
-  right: -20vw;
-  top: 40vh;
-}*/
 
 .content-main {
     display: flex;
@@ -121,8 +105,6 @@ ul li a {
 .title {
     display: flex;
     flex-direction: column;
-    z-index: 1;
-    width: 50%;
 }
 
 .title h1 {
@@ -177,7 +159,7 @@ input {
 .image-content img {
     width: 668px;
     height: 700px;
-    transform: translate(-20%, -15%);
+    transform: translate(10%, -15%);
 }
 
 .persons {
@@ -209,7 +191,6 @@ input {
     background-position: top left;
     position: relative;
     background-color: #042C54;
-    box-shadow: 10px 5px 5px black;
 }
 
 .infos::after {
@@ -563,6 +544,7 @@ figure img {
 
 .title-footer h3 {
     font-size: 34px;
+    line-height: 42px;
     font-weight: 800;
     background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
     -webkit-background-clip: text;
