@@ -158,7 +158,7 @@ input {
 
 .image-content img {
     width: 668px;
-    height: 700px;
+    position: relative;
     transform: translate(10%, -15%);
 }
 
@@ -622,4 +622,10 @@ footer {
     font-weight: 500;
     color: var(--text-color-links);
     padding-bottom: 26px;
+}
+
+@media screen and (orientation: landscape) and (max-width: 1366px){
+  .image-content img {
+    transform: translate(-10%, -15%);
+  }
 }
